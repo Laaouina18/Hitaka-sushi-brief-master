@@ -18,6 +18,10 @@ body{
     font-family: "Karla";
    
 }
+.rem:hover{
+color: #df246e;
+cursor: pointer;
+}
 
 .titre {
     font-style: italic;
