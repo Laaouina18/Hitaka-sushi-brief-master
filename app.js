@@ -8,8 +8,9 @@ function toggleMenu() {
 }
 
 function rem(){
-  
+  window.location.reload();
   document.querySelector(".rem").innerHTML = "bien envoyé";
+ alert("la commande a été bien confirmé")
   
 }
 

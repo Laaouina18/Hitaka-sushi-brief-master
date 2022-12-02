@@ -19,7 +19,7 @@
 }
 .adresse{
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
 }
 .navbar-mobile {
   list-style-type: none;
@@ -472,7 +472,14 @@
     width: 100%;
   }
 }
-
+h4{
+  color: #df246e;
+  text-align: center;
+}
+.info{
+  color:#666;
+  text-align: center;
+}
 
 
 

@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Karla" sans-serif; */
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
@@ -12,15 +11,28 @@
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
-
+.navbar-mobile-right img{
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
 body{
     font-family: "Karla";
    
 }
+.rem{
+    margin-top: 9px;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 6px;
+    background-color: white;
+    color: #2f2f2f;
+}
 .rem:hover{
-color: #df246e;
+    color: white;
+background-color: #df246e;
 cursor: pointer;
+
 }
 
 .titre {
@@ -28,13 +40,18 @@ cursor: pointer;
     margin-left: 12rem;
     margin-top: 3rem;
 }
-
+.plat-img img{
+   height: 9rem;
+}
 .para {
     margin-top: 2rem;
     font-size: 1rem;
     font-style: italic;
 }
-
+.nom-plat,p{
+    font-size: large;
+    color: white;
+}
 .menu {
     background-color: #D2EDD8;
     padding: 2rem;
@@ -102,26 +119,12 @@ a {
     cursor: pointer;
 
 }
-
-.footer {
-    padding-top: 1rem;
-    display: grid;
-    justify-content: center;
-    margin-top: 5rem;
-    border-radius: 8px;
-  
-    margin-bottom: 6px;
-    box-sizing: border-box;
-    padding: 2rem;
-}
-
 .logos {
     display: flex;
     justify-content: center;
     gap: 20px;
     list-style: none;
 }
-
 .ft {
     height: 3rem;
     width: 3rem;
@@ -130,39 +133,30 @@ a {
 .ad {
     margin-right: 90rem;
 }
-
 .navbar ul {
     display: flex;
 
     justify-content: space-around;
     list-style: none;
 }
-
 .navbar-center {
     width: 100%;
 }
-
 img {
     width: 100%;
 }
-
 .img66 {
     height: 10rem;
     width: 20rem;
     margin-top: 5rem;
     margin: auto;
 }
-
 .img2 {
-
     width: 77rem;
     margin-top: 7rem;
     padding: 3rem;
     margin-left: 1rem;
-
 }
-
-
 input[type=text],
 select,
 textarea {
@@ -175,9 +169,7 @@ textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
-
 input[type=submit] {
-    /* background-color: #04AA6D; */
     background: rgb(252, 252, 252);
 
     color: white;
@@ -186,8 +178,6 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-
-
 .container3{
     height: 20rem;
 }
@@ -196,13 +186,8 @@ input[type=submit] {
 }
 .container {
     border-radius: 5px;
-    /* background-color: #f2f2f2; */
-    /* background-image: url(https://commande.haisushi.fr/assets/fond2019-v2.jpg); */
-   
-
-
+    width: 100%;
 }
-
 #submit {
     border: 1px solid;
     background: rgb(252, 252, 252);
@@ -211,32 +196,17 @@ input[type=submit] {
 }
 
 /*Menu*/
-
-
-
-
 .bare {
     display: grid;
 }
-
-.commande {
-    border: 1px solid;
-    background: rgb(57, 151, 71);
-    color: black;
-    outline: none;
-}
-
 
 
 .com1 {
     display: flex;
 }
-
 .container {
     display: inline-block;
     position: relative;
-    /* width: 100%; */
-    /* background-image: url("./image/bak.jpg"); */
 }
 
 .container1 {
@@ -245,8 +215,6 @@ input[type=submit] {
     max-width: 90%;
     text-align: center;
 }
-
-
 .text {
     background-color: transparent;
     z-index: 1;
@@ -260,71 +228,54 @@ input[type=submit] {
     color: rgb(16, 15, 15);
     width: 100%;
     width: 40rem;
-
 }
-
 .src {
     height: 30rem;
     width: 80rem;
     padding: 12px;
     border-radius: 25px;
-
-
 }
-
 .tex {
     background-color: transparent;
     position: absolute;
     z-index: 1;
     margin: 2px;
-    /* left:6rem; */
     right: 0;
     font-size: 3rem;
     top: 35%;
     color: rgb(16, 15, 15);
     width: 100%;
-
-
 }
 h2{
     color: rgb(187, 26, 91);
     margin-top: 6rem;
     
 }
+
 .titre-h{
     color: white;
 }
 .zone-1{
     color: white;
 }
-
-
 .background-home-img {
     width: 100%;
     height: 90vh;
 }
-
-
-
 .background-home-img img {
     width: 100%;
     height: 100%;
 }
-
 .les-commandes {
     background:transparent;
     padding: 1rem;
     color: white;
 }
-
 .commonde {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-
 }
-
-
 .burger-list {
     display: none;
     background-color: #2f2f2f;
@@ -335,9 +286,6 @@ h2{
     right: 0;
     z-index: 100;
 }
-
-
-
 .burger-list ul {
     list-style: none;
     position: absolute;
@@ -354,7 +302,6 @@ h2{
     flex-direction: column;
     justify-content: space-between;
 }
-
 .inrto-logo {
     position: absolute;
     top: 0;
@@ -364,18 +311,15 @@ h2{
     z-index: 80;
     height: 70%;
 }
-
 .inrto-logo img {
     width: 100%;
     height: 100%;
     padding: 10px;
 }
-
 .navbar-mobile {
     display: none;
     cursor: pointer
 }
-
 .fa {
     font-size: 30px !important;
 }
@@ -387,7 +331,6 @@ h2{
     align-items: center;
     padding: 0 20px 0 20px;
 }
-
 @media (max-width:800px) {
     .navbar-mobile {
         background-color:black;
@@ -401,13 +344,10 @@ h2{
         display: none;
     }
 }
-
-
 .sushi-welcome-container{
     padding-top:24rem;
     padding-bottom:8rem;
-    text-align: center;
-    
+    text-align: center;  
 }
 .a1{
     padding:20px ;
@@ -423,7 +363,6 @@ width: 20rem;
     justify-content: space-evenly;
     
 }
-
 .sushi-welcome-container button{
     border: none;
     border: 1px solid rgb(232, 102, 123);
@@ -432,14 +371,11 @@ width: 20rem;
     color: rgb(186, 14, 97);
     background-color: transparent;
     border-radius: 5px;
-  
     margin-bottom: 6rem;
 
 }
 .coment h2{
   text-align: center;
-
-
 }
 .zone{
     padding: 22px;
@@ -459,10 +395,6 @@ width: 20rem;
   padding: 1rem;
     background-image: linear-gradient(to bottom, black , rgb(75, 4, 50));
 }
-
-
-
-
 .hide{
    display: none;
 }
@@ -478,13 +410,6 @@ width: 20rem;
       display: block;
     }
   }
-  p{
-    color: white;
-    padding: 1rem;
-
-   
-  }
-
 body{
     font-family: "Karla";
        background-image: linear-gradient(to bottom, black , rgb(75, 4, 50));
@@ -529,17 +454,17 @@ body {
     padding: 10px;
 
 }
-
 a:hover {
     color: white;
 }
-
+.content-dis{
+    width: 100%;
+}
 .fa-bars {
     color: #df246e;
     width: 100%;
     height: 100%;
 }
-
 .nav-logo {
     width: 80px;
     height: 80px;
@@ -547,27 +472,21 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
-
 #logo {
     width: 80px;
     height: 70px;
     padding: 5px;
 }
-
-
 a {
     all: unset;
     cursor: pointer;
-
 }
-
 .footer {
     padding-top: 1rem;
     display: grid;
     justify-content: center;
     margin-top: 5rem;
 }
-
 .logos {
     display: flex;
     justify-content: center;
@@ -590,7 +509,6 @@ a {
     justify-content: space-around;
     list-style: none;
 }
-
 .navbar-center {
     width: 100%;
 }
@@ -598,24 +516,19 @@ a {
 img {
     width: 100%;
 }
-
 .img66 {
     height: 10rem;
     width: 20rem;
     margin-top: 5rem;
     margin: auto;
 }
-
 .img2 {
 
     width: 77rem;
     margin-top: 7rem;
     padding: 3rem;
     margin-left: 1rem;
-
 }
-
-
 input[type=text],
 select,
 textarea {
@@ -632,43 +545,27 @@ textarea {
 input[type=submit] {
     /* background-color: #04AA6D; */
     background: rgb(252, 252, 252);
-
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-
-
-
 .container {
     border-radius: 5px;
-    /* background-color: #f2f2f2; */
- 
 }
-
 #submit {
     border: 1px solid;
     background: rgb(252, 252, 252);
     color: black;
     outline: none;
 }
-
-/*Menu*/
-.country {
-    /* margin-left: 12px; */
-}
-
 .select-plat {
     width: 50%;
 }
-
 .plat22 content {
     display: flex;
-
 }
-
 .add-to-cart {
  background-color: white;
     width: 20px;
@@ -677,56 +574,44 @@ input[type=submit] {
     cursor: pointer;
     border-radius: 20px;
     color: black;
-   
 }
-
 .content {
     display: flex;
     padding: 10px;
     justify-content: space-between;
 }
-
 .add-to-cart img {
     padding: 5px;
     margin: auto;
     width: 10px;
-
 }
-
-
 .fome-plat {
     display: flex;
     flex-direction: row;
     height: 40rem;
     width: 40rem;
 }
-
 .forme1 {
     display: flex;
     justify-content: space-between;
-
 }
 .number{
     color:white;
 }
-
 .pimg {
     padding: 12px;
     border-radius: 25px;
 
 }
-
 .bare {
     display: grid;
 }
-
 .commande {
     border: 1px solid;
     background: rgb(57, 151, 71);
     color: black;
     outline: none;
 }
-
 .calc {
     border: 1px solid;
     background: rgb(87, 184, 31);
@@ -734,28 +619,22 @@ input[type=submit] {
     outline: none;
     padding: 2px;
 }
-
 .com1 {
     display: flex;
 }
-
 .container {
     display: inline-block;
     position: relative;
-    /* width: 100%; */
 }
-
 .container1 {
     width: 100%;
     display: block;
     max-width: 90%;
     text-align: center;
 }
-
 .container1 img {
     width: 100%;
 }
-
 .text {
     background-color: transparent;
     z-index: 1;
@@ -769,18 +648,13 @@ input[type=submit] {
     color: rgb(16, 15, 15);
     width: 100%;
     width: 40rem;
-
 }
-
 .src {
     height: 30rem;
     width: 80rem;
     padding: 12px;
     border-radius: 25px;
-
-
 }
-
 .tex {
     background-color: transparent;
     position: absolute;
@@ -792,60 +666,43 @@ input[type=submit] {
     top: 35%;
     color: rgb(16, 15, 15);
     width: 100%;
-
-
 }
-
 .form-plat {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     gap: 20px;
 }
-
 .section-1 {
-
-
-    display: grid;
+display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
-
 }
-
 .section-1 img {
     border-radius: 7px;
 }
-
 .section-2 {
     max-width: 200px;
     justify-self: center;
     text-align: center;
-
 }
-
 .section-2 .title,
 .total-commandes {
     color:#fff;
     font-weight: bold;
-    /* border: 1px solid black; */
     font-family: "PS-Aelyn-Regular (titre)", Sans-serif;
- 
     background: transparent;
     padding: 1rem;
     margin-bottom: 10px;
     margin-top: 10px;
-
-
 }
 .container1{
     background-image: url("./image/bak.jpg");
 }
-
 .background-home-img {
     width: 100%;
     height: 90vh;
 }
-
 .capasity-background {
     background-color: #2f2f2fc4;
     width: 100%;
@@ -860,15 +717,10 @@ input[type=submit] {
 .page-menu{
 margin: 20px;
 }
-
-
-
-
 .commonde {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-
 }
 .inrto-logo {
     position: absolute;
@@ -899,14 +751,12 @@ margin: 20px;
 .fa {
     font-size: 30px !important;
 }
-
 .navbar-mobile-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px 0 20px;
 }
-
 @media (max-width:800px) {
     .navbar-mobile {
         background-color: black;
@@ -920,11 +770,8 @@ margin: 20px;
         display: none;
     }
 }
-
-
 .sushi-welcome-container{
-    text-align: center;
-    
+    text-align: center;  
 }
 .a1{
     padding:20px ;
@@ -937,7 +784,6 @@ margin: 20px;
     justify-content: space-evenly;
     width: 80rem;
 }
-
 .sushi-welcome-container button{
     border: none;
     border: 1px solid rgb(232, 102, 123);
@@ -984,8 +830,6 @@ margin: 20px;
 .hide{
    display: none;
 }
-
-/* footer */
 .dummy_page {
     height: 200px;
     width: 100%;
@@ -994,12 +838,10 @@ margin: 20px;
     box-sizing: border-box;
     padding: 60px 0px;
   }
-  /* STYLES SPECIFIC TO FOOTER  */
   .footer {
     width: 100%;
     position: relative;
     height: auto;
-    /* background-color: #070617; */
   }
   .footer .col {
     width: 190px;
@@ -1097,8 +939,6 @@ margin: 20px;
       width: 100%;
     }
   }
-
-
-
+  
 
 
