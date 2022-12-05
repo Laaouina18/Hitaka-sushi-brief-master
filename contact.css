@@ -44,6 +44,7 @@
   }
   
   .background {
+    margin: -95px  0 -95px 0;
     display: flex;
     min-height: 100vh;
   }
@@ -477,6 +478,7 @@ h4{
   text-align: center;
 }
 .info{
+  font-style:initial;
   color:#666;
   text-align: center;
 }
