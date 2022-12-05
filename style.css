@@ -30,7 +30,7 @@ body{
 }
 .rem:hover{
     color: white;
-background-color: #df246e;
+background-color: black;
 cursor: pointer;
 
 }
@@ -157,8 +157,15 @@ img {
     padding: 3rem;
     margin-left: 1rem;
 }
+select{
+    margin-right: 20px;
+    width:20%;
+}
+.plat{
+    color: white;
+    margin-left: 2%;
+}
 input[type=text],
-select,
 textarea {
     width: 100%;
     padding: 12px;
@@ -561,6 +568,7 @@ input[type=submit] {
     outline: none;
 }
 .select-plat {
+    margin-left: 20px;
     width: 50%;
 }
 .plat22 content {
@@ -668,6 +676,7 @@ input[type=submit] {
     width: 100%;
 }
 .form-plat {
+    margin-left: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -715,7 +724,7 @@ display: grid;
     height: 100%;
 }
 .page-menu{
-margin: 20px;
+padding: 20px;
 }
 .commonde {
     display: flex;
@@ -940,5 +949,9 @@ margin: 20px;
     }
   }
   
-
+@media only screen and(max-width:334px){
+    #plat-slect{
+        margin-left: 20px;
+    }
+}
 
