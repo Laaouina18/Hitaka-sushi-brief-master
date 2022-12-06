@@ -9,8 +9,7 @@ sectionSalade.classList.add("hide");
 sectionObento.classList.add("hide");
 
 platSelect.addEventListener("change",()=>{
-  var value = platSelect.value;
-  var text =  platSelect.options[platSelect.selectedIndex].text;
+  var text =  platSelect.value;
 //   console.log(text);
 
   if(text=="Plat"){
