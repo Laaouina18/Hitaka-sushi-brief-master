@@ -10,6 +10,7 @@ sectionObento.classList.add("hide");
 
 platSelect.addEventListener("change",()=>{
   var text =  platSelect.value;
+ 
 //   console.log(text);
 
   if(text=="Plat"){
